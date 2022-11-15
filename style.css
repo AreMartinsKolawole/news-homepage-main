@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li a{
+    padding: 20px;
+    font-size: 2vmin;
+    color: hsl(236, 13%, 42%);
+}
+
+.nav-links a:hover{
+    color: hsl(5, 85%, 63%);
+}
+section img{
+    width: 95%;
+    height: auto;
+}
+
+
+.sub{
+    display: flex;
+    padding-top: 30px;
+}
+
+.sub-left h1{
+    font-size: 6vmin;
+    font-weight: 800;
+}
+
+.sub-right{
+    padding-left: 40px;
+    width: 40%;
+    padding-right: 20px; 
+    font-size: 2vmin;
+    color: hsl(236, 13%, 42%);   
+}
+
+
+.sub-right p{
+    margin-bottom: 21px;
+}
+
+.sub-right button{
+    padding: 10px 25px;
+    margin-top: 10px;
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+
+}
+
+.sub-right button:hover{
+    color: hsl(36, 100%, 99%);   
+    background-color: black;
+}
+
+.sub-left{
+    width: 50%;
+}
+
+
+.container{
+    display: flex;
+    padding: 30px;
+}
+
+
+.left{
+    width: 70%;
+    margin-left: 5%;
+}
+
+.right{
+    width: 30%;
+    margin-right: 5%;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+}
+.right-text{
+    padding: 7%;
+}
+
+.line{
+    height: 1px;
+    background-color: hsl(236, 13%, 42%);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.right p{
+    padding-bottom: 13px;
+    font-size: 2vmin;
+}
+
+.right h2{
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 20px;
+}
+
+.right a h3{
+    font-size: 2.5vmin;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.right a h3:hover{
+    color: hsl(5, 85%, 63%);;
+}
+
+
+.new{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+.event{
+    display: flex;
+}
+
+.event .image img{
+    width: 80px;
+    height: auto;
+}
+.text{
+    padding-left: 10px;
+    align-items: center;
+}
+
+.text h2{
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 10px;
+}
+
+.text a h4{
+    font-size: 2vmin;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.text a h4:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.text p{
+    font-size: 1.5vmin;
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 20px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+
+    .container{
+        margin-top: 70px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(221, 221, 221);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+       
+    }
+
+    .nav-links li a{
+        color: black;
+        font-size: 4vmin;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+    }
+
+    .nav-links li a{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        display: block;
+        width: 100%;
+    }
+
+    section img{
+        width: 120%;
+        height: auto;
+    }
+
+    .sub{
+        display: block;
+    }
+
+    .sub-left{
+        width: 120%;
+    }
+
+    .sub-right{
+        width: 115%;  
+        padding-top: 20px;
+        padding-left: 4px;
+    }
+
+    .right{
+        width: 80%;
+        margin-top: 30px;
+        margin-left: 17px;
+        margin-right: auto;
+    }
+
+    .new{
+        margin-top: 30px;
+        display: block;
+        margin-left: 25px;
+    }
+
+    .text a h4{
+        font-size: 4vmin;
+    }
+
+    .text p{
+        font-size: 2vmin;
+    }
+} 
+
+.attribution{
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
